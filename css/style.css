@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open San', sans-serif;
+  }
+.卡片 .圖片 img {
+    height: 150px;
+    margin: -100px 0 15px 0;
+    border-radius: 8px;
+    filter: drop-shadow(0 8px 8px);
+    transition: .2s;
+}
+.卡片 {
+    width: 240px;
+    height: min-content;
+    padding: 30px;
+    margin: 0 5px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transition: transform 0.2s linear;
+}
+.卡片 .圖片 {
+    width: 100%;
+    text-align: center;
+}
+.卡片:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #00000050;
+}
+.卡片 .主題 h1 {
+    color: black;
+    font-size: 33px;
+    letter-spacing: 0.5px;
+}
+.卡片 .主題 p {
+    color: #b3bac3;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    max-height: 1em;
+    width: 180px;
+}
+.卡片 .詳情 {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.卡片 .詳情 span {
+    color: #4d84e3;
+    font-size: 15px;
+}
+.卡片 .詳情 p {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.卡片 button {
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    border-radius: 30px;
+}
+.卡片:first-child button{
+    background-color: #A1020B;
+}
+.卡片:nth-child(2) button{
+    background-color: #4b94e2;
+}
+.卡片:nth-child(3) button{
+    background-color: #F8DB92;
+}
+.卡片:nth-child(4) button{
+    background-color: #62567E;
+}
+.卡片:nth-child(5) button{
+    background-color: #DC3907;
+}
+.卡片 button:hover {
+    background: grey;
+    transition: 0.2s;
+    color: aliceblue;
+}
+body {
+    /* min-width: 1200px; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(left, #A1020B 10%, #4b94E2 30%, #F8DB92 50%, #62567E 70%, #DC3907 90%);
+    background-image: -webkit-linear-gradient(left, #A1020B 10%, #4b94E2 30%, #F8DB92 50%, #62567E 70%, #DC3907 90%);
+    background-repeat: repeat-y;
+    justify-content: space-around;
+    overflow-x: hidden;
+}
+@media screen and (max-width: 1250px) {
+    body{
+        height: 2000px;
+        display: block;
+        /* justify-content: center; */
+        align-items: center;
+        background-image: linear-gradient(top, #A1020B 10%, #4b94E2 30%, #F8DB92 50%, #62567E 70%, #DC3907 90%);
+        background-image: -webkit-linear-gradient(top, #A1020B 10%, #4b94E2 30%, #F8DB92 50%, #62567E 70%, #DC3907 90%);
+    }
+    body .卡片{
+        margin: 100px auto;
+    }
+}
